@@ -1,0 +1,470 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #706ccf; /* Daha yumuşak bir mor tonu */
+    color: #fff; /* Yazı rengi beyaz */
+    padding: 5px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo solda, menü sağda */
+    height: 60px; /* Header yüksekliğini sabitle */
+}
+
+.logo img {
+    width: 166px; /* Genişlik */
+    height: 60px; /* Yükseklik */
+    object-fit: contain; /* Görselin taşmadan uygun şekilde oturmasını sağlar */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Menü elemanları arasındaki boşluk */
+    position: absolute;
+    left: 50%; /* Menü ortada başlar */
+    transform: translateX(-50%); /* Menü tam ortada hizalanır */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff; /* Varsayılan yazı rengi beyaz */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px; /* Yuvarlak kenarlar */
+    background: transparent; /* Pasif durumda şeffaf */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+.nav-links li a:hover {
+    background: #ffffff; /* Hover durumunda beyaz arka plan */
+    color: #524f9d; /* Yazı rengi ana renk */
+    font-weight: bold; /* Hover sırasında yazıyı kalın yap */
+}
+
+.nav-links li a.active {
+    background: #ffcc00; /* Aktif durumda parlak sarı arka plan */
+    color: #333333; /* Aktif durumda koyu yazı rengi */
+    font-weight: bold;
+    border: 2px solid #524f9d; /* Aktif durumda kenarlık */
+}
+
+/* Mission Vision */
+
+.mission-vision {
+    background: #f8f8ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.mission-vision h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mission-vision p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Founded Bölümü */
+.about-founded {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-founded h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-founded p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* TEAM */
+.team-section {
+    background: #f9f9ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.founders, .sub-members {
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 16px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Competitions */
+.competitions {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.competitions h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.competition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.competition {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.competition h3 {
+    font-size: 18px;
+    color: #524f9d;
+    margin-bottom: 10px;
+}
+
+/* Yorumlar */
+.testimonials-section {
+    background: #f9f9ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.testimonials-slider {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.swiper-slide {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.swiper-slide p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.swiper-slide h4 {
+    font-size: 18px;
+    color: #524f9d;
+    font-weight: bold;
+}
+
+/* News */
+.news-section {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.news-card {
+    background: #f9f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    color: #524f9d;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 15px;
+    line-height: 1.6;
+}
+
+.news-card a {
+    display: inline-block;
+    margin: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-card a:hover {
+    color: #0056b3;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Donate */
+/* Donate Section */
+.donate-section {
+    background: #f9f9ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.donate-section h2 {
+    font-size: 28px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.donate-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.donate-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.donate-card h3 {
+    font-size: 18px;
+    color: #524f9d;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donate-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-donate {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-donate:hover {
+    background: #0056b3;
+}
+
+
+/* Follow Us */
+
+/* Follow Us Section */
+.follow-us {
+    background: linear-gradient(135deg, #24aae1, #007bff);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.follow-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.follow-us p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon span {
+    margin-top: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    background: white;
+    color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon.facebook:hover {
+    color: #3b5998;
+}
+
+.social-icon.twitter:hover {
+    color: #1da1f2;
+}
+
+.social-icon.instagram:hover {
+    color: #e1306c;
+}
+
+.social-icon.linkedin:hover {
+    color: #0077b5;
+}
+
+/* Footer */
+.footer {
+    background: #524f9d; /* Yeni renk */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .social-icon span {
+        font-size: 10px;
+    }
+}
+
