@@ -560,14 +560,90 @@ body {
 
 
 /* MOBIL */
-
 @media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        height: auto; /* Yüksekliği otomatik ayarla */
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Menü elemanlarını alt alta diz */
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Hero */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .hero-content {
         text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
     }
 
     .hero-buttons {
         justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* Global Platform ve Info Bölümü */
+@media (max-width: 768px) {
+    .global-platform .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .info-section .container {
+        grid-template-columns: 1fr; /* Tek sütun */
+        gap: 15px;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 18px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 10px;
     }
 }
 
@@ -624,4 +700,3 @@ body {
         text-align: center; /* Sağdaki yazılar da ortalanır */
     }
 }
-

@@ -484,3 +484,87 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr 1fr; /* 2 sütun */
+        gap: 10px;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-member h4 {
+        font-size: 14px;
+    }
+
+    .team-member p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .donate-options {
+        grid-template-columns: 1fr; /* Tek sütun */
+    }
+
+    .donate-card {
+        padding: 15px;
+    }
+
+    .donate-card h3 {
+        font-size: 16px;
+    }
+
+    .donate-card p {
+        font-size: 14px;
+    }
+
+    .btn-donate {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-slider {
+        max-width: 100%;
+        padding: 0 10px; /* Yanlardaki boşluğu küçült */
+    }
+
+    .swiper-slide {
+        padding: 15px;
+    }
+
+    .swiper-slide p {
+        font-size: 14px;
+    }
+
+    .swiper-slide h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 10px; /* İkonlar arasındaki boşluk */
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .social-icon span {
+        font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
