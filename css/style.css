@@ -29,37 +29,37 @@ body {
 /* Menü Elemanları */
 .nav-links {
     list-style: none;
-    display: flex;
-    gap: 30px;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 30px; /* Menü elemanları arasındaki boşluk */
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50%; /* Menü ortada başlar */
+    transform: translateX(-50%); /* Menü tam ortada hizalanır */
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: white;
+    color: #ffffff; /* Varsayılan yazı rengi beyaz */
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 10px 20px;
-    transition: all 0.3s ease;
+    border-radius: 30px; /* Yuvarlak kenarlar */
+    background: transparent; /* Pasif durumda şeffaf */
+    transition: all 0.3s ease; /* Geçiş efekti */
 }
 
-/* Hover Durumu */
 .nav-links li a:hover {
-    background: white;
-    color: #524f9d;
-    border-radius: 30px;
+    background: #ffffff; /* Hover durumunda beyaz arka plan */
+    color: #524f9d; /* Yazı rengi ana renk */
+    font-weight: bold; /* Hover sırasında yazıyı kalın yap */
 }
 
-/* Aktif Menü Elemanı */
 .nav-links li a.active {
-    background: #ffcc00;
-    color: #333333;
+    background: #ffcc00; /* Aktif durumda parlak sarı arka plan */
+    color: #333333; /* Aktif durumda koyu yazı rengi */
     font-weight: bold;
-    border: 2px solid #524f9d;
+    border: 2px solid #524f9d; /* Aktif durumda kenarlık */
 }
 
 
