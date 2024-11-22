@@ -181,6 +181,22 @@ body {
 }
 
 /* Yorumlar */
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007bff;
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: #007bff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0056b3;
+}
+
+/* ======*/
 .testimonials-section {
     background: #f9f9ff;
     padding: 50px 20px;
