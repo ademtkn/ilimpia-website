@@ -468,6 +468,30 @@ body {
     font-size: 14px;
 }
 
+/* MOBIL */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        height: auto; /* Yüksekliği otomatik ayarla */
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Menü elemanlarını alt alta diz */
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
 @media (max-width: 768px) {
     .social-icons {
         gap: 15px;
