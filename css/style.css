@@ -7,10 +7,12 @@ body {
 
 /* Header */
 .header {
-    background: #706ccf; /* Daha yumuşak bir mor tonu */
-    color: #fff; /* Yazı rengi beyaz */
-    padding: 5px 0;
+    position: sticky; /* Header'ı sabitle */
+    top: 0; /* Sayfanın üst kısmına sabitler */
+    z-index: 1000; /* Banner üzerinde kalması için z-index ayarla */
+    background: #706ccf; /* Arka plan rengi korunsun */
 }
+
 
 .header .container {
     display: flex;
@@ -560,19 +562,25 @@ body {
 
 
 /* MOBIL */
+/* Header - Mobil ve Tablet Cihazlar için */
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
-        height: auto; /* Yüksekliği otomatik ayarla */
+        align-items: center;
+        padding: 10px 0;
     }
 
     .logo img {
-        width: 120px;
+        max-width: 140px;
         height: auto;
+        margin-bottom: 10px;
     }
 
     .nav-links {
-        flex-direction: column; /* Menü elemanlarını alt alta diz */
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        transform: none;
         gap: 10px;
     }
 
@@ -582,37 +590,33 @@ body {
     }
 }
 
-/* Hero */
+/* Hero - Mobil Cihazlar için */
 @media (max-width: 768px) {
-    .hero .container {
-        flex-direction: column;
+    .hero {
+        padding: 80px 20px;
         text-align: center;
-    }
-
-    .hero-content {
-        text-align: center;
-        margin-bottom: 20px;
     }
 
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .hero-content p {
-        font-size: 16px;
-    }
-
-    .hero-image img {
-        max-width: 100%;
-        height: auto;
+        font-size: 14px;
     }
 
     .hero-buttons {
-        justify-content: center;
         flex-direction: column;
         gap: 10px;
     }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }
+
 
 
 /* Global Platform ve Info Bölümü */

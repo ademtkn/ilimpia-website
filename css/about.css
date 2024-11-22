@@ -6,10 +6,12 @@ body {
 }
 
 /* Header */
+/* Header Sabitleme */
 .header {
-    background: #706ccf; /* Daha yumuşak bir mor tonu */
-    color: #fff; /* Yazı rengi beyaz */
-    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #706ccf;
 }
 
 .header .container {
@@ -472,16 +474,21 @@ body {
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
-        height: auto; /* Yüksekliği otomatik ayarla */
+        align-items: center;
+        padding: 10px 0;
     }
 
     .logo img {
-        width: 120px;
+        max-width: 140px;
         height: auto;
+        margin-bottom: 10px;
     }
 
     .nav-links {
-        flex-direction: column; /* Menü elemanlarını alt alta diz */
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        transform: none;
         gap: 10px;
     }
 
