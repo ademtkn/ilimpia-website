@@ -468,6 +468,33 @@ body {
     font-size: 14px;
 }
 
+/* Mobil Ayarlar */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: row; /* Logo ve menü aynı satırda */
+        justify-content: space-between; /* Logo sola, menü sağa */
+        align-items: center;
+        padding: 5px 10px;
+        height: auto; /* Dinamik yükseklik */
+    }
+
+    .logo img {
+        width: 120px; /* Logoyu küçült */
+        height: auto; /* Oranı koru */
+    }
+
+    .nav-links {
+        position: static;
+        transform: none; /* Ortalamayı kaldır */
+        gap: 10px; /* Menü elemanları arası boşluk */
+    }
+
+    .nav-links li a {
+        padding: 5px 10px; /* Menü elemanlarını küçült */
+        font-size: 14px; /* Yazı boyutunu küçült */
+    }
+}
+
 @media (max-width: 768px) {
     .social-icons {
         gap: 15px;
